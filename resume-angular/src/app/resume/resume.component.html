@@ -1,0 +1,142 @@
+<div fxLayout="column">
+    <mz-card [backgroundClass]="'white'" [textClass]="'black-text'" [hoverable]="true">
+        <mz-card-title>
+            Resume
+        </mz-card-title>
+        <mz-card-content>
+            <blockquote>
+                <strong class="flow-text">
+                    <p>IT career in development with 4 (four) years of experience on software development.
+                    <p>I am adept to the geek culture, collaborative and I have great disposition to teamwork.</p>
+                    <p>And I do coding activities with extreme pleasure.</p>
+                </strong>
+            </blockquote>
+        </mz-card-content>
+        <mz-card-action>
+        </mz-card-action>
+    </mz-card>
+
+    <div fxLayout.gt-lg="row" fxLayout.lt-lg="column" fxLayoutAlign="space-between">
+        <mz-card fxFlex="49%" [backgroundClass]="'white'" [textClass]="'black-text'" [hoverable]="true">
+            <mz-card-title>
+                Professional Experiences
+            </mz-card-title>
+            <mz-card-content>
+                <mz-collection>
+                    <mz-collection-item [avatar]="true">
+                        <img mz-avatar src="assets/venturus.svg">
+                        <div class="title">
+                            <strong>Java Developer & Javascript Developer</strong>
+                        </div>
+                        <div>Venturus</div>
+                        <div>
+                            Acting in the development of a project with focus on the front-end improvement of a product in the telecommunication area
+                            for a multinational company, using tecnologies like Angular 4, Typescript 2.4, Jasmine, HTML5,
+                            CSS3, SASS.
+                        </div>
+                        <div mz-secondary-content class="cyan-text text-accent-4">
+                            <strong>Apr/2017 - Today</strong>
+                        </div>
+                    </mz-collection-item>
+                    <mz-collection-item [avatar]="true">
+                        <img mz-avatar src="assets/logo-cpqd.svg">
+                        <div class="title">
+                            <strong>Technical Java Developer</strong>
+                        </div>
+                        <div>CPqD</div>
+                        <div>
+                            Development of JEE software to billing and telecomunication area. I worked with frameworks like Hibernate, Struts, Maven,
+                            jQuery and database Oracle and creation of webservices SOAP. Development of dev tools like a
+                            code searcher using Apache Lucene and Groovy console to execute scripts on remote environments.
+                        </div>
+                        <div mz-secondary-content class="cyan-text text-accent-4">
+                            <strong>Aug/2014 - Apr/2017</strong>
+                        </div>
+                    </mz-collection-item>
+                    <mz-collection-item [avatar]="true">
+                        <img mz-avatar src="assets/logo-cpqd.svg">
+                        <div class="title">
+                            <strong>Intern</strong>
+                        </div>
+                        <div>CPqD</div>
+                        <div>
+                            Development of JEE software.
+                        </div>
+                        <div mz-secondary-content class="cyan-text text-accent-4">
+                            <strong>Jan/2013 - Aug/2014</strong>
+                        </div>
+                    </mz-collection-item>
+                </mz-collection>
+            </mz-card-content>
+            <mz-card-action>
+            </mz-card-action>
+        </mz-card>
+
+        <!-- Hide 2% space on screens less than large ones -->
+        <div fxFlex="1%" fxHide.lt-lg></div>
+
+        <div fxFlex="49%" fxLayout="column" fxLayoutAlign="space-between">
+            <mz-card [backgroundClass]="'white'" [textClass]="'black-text'" [hoverable]="true">
+                <mz-card-title>
+                    Academic Background
+                </mz-card-title>
+                <mz-card-content>
+                    <mz-collection>
+                        <mz-collection-item [avatar]="true">
+                            <img mz-avatar src="assets/ifsp.svg">
+                            <div class="title">
+                                <strong>Systems Analisys and Development</strong>
+                            </div>
+                            <div>Federal Institute of Education, Science and Technology of São Paulo - IFSP</div>
+                            <div mz-secondary-content class="cyan-text text-accent-4">
+                                <strong>2015 - 2017</strong>
+                            </div>
+                        </mz-collection-item>
+                        <mz-collection-item [avatar]="true">
+                            <img mz-avatar src="assets/unicamp.svg">
+                            <div class="title">
+                                <strong>IT Technician</strong>
+                            </div>
+                            <div>Technical College of Limeira - UNICAMP</div>
+                            <div mz-secondary-content class="cyan-text text-accent-4">
+                                <strong>2010 - 2012</strong>
+                            </div>
+                        </mz-collection-item>
+                    </mz-collection>
+                </mz-card-content>
+                <mz-card-action>
+                </mz-card-action>
+            </mz-card>
+
+            <mz-card [backgroundClass]="'white'" [textClass]="'black-text'" [hoverable]="true">
+                <mz-card-title>
+                    Languages
+                </mz-card-title>
+                <mz-card-content>
+                    <mz-collection>
+                        <mz-collection-item [class]="'flow-text'">
+                            Portuguese
+                            <div mz-secondary-content class="cyan-text text-accent-4">
+                                <strong>Native</strong>
+                            </div>
+                        </mz-collection-item>
+                        <mz-collection-item [class]="'flow-text'">
+                            English
+                            <div mz-secondary-content class="cyan-text text-accent-4">
+                                <strong>Advanced</strong>
+                            </div>
+                        </mz-collection-item>
+                        <mz-collection-item [class]="'flow-text'">
+                            Spanish
+                            <div mz-secondary-content class="cyan-text text-accent-4">
+                                <strong>Intermediate</strong>
+                            </div>
+                        </mz-collection-item>
+                    </mz-collection>
+                </mz-card-content>
+                <mz-card-action>
+                </mz-card-action>
+            </mz-card>
+        </div>
+    </div>
+</div>
