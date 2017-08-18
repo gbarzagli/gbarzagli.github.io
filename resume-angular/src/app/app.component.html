@@ -1,21 +1,21 @@
-<div class="holder container">
+<div class="holder">
     <header fxLayout="column">
         <nav class="indigo">
-            <div class="nav-wrapper">
+            <div class="nav-wrapper container">
                 <a href="" class="brand-logo">Gabriel Viseli Barzagli</a>
                 <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a routerLink="">Resume</a></li>
-                    <li><a routerLink="portfolio">Portfolio</a></li>
+                    <li><a routerLink="contact">Contact</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile">
                     <li><a routerLink="">Resume</a></li>
-                    <li><a routerLink="portfolio">Portfolio</a></li>
+                    <li><a routerLink="contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main fxFlex="90%">
+    <main class="container" fxFlex="90%">
         <router-outlet></router-outlet>
     </main>
 </div>
