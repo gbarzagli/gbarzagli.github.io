@@ -15,19 +15,30 @@
             </div>
         </nav>
     </header>
-    <main class="container" fxFlex="90%">
+    <main class="container" fxFlex="100%">
         <router-outlet></router-outlet>
     </main>
 </div>
 
 <div class="fixed-action-btn">
     <a class="btn-floating btn-large cyan accent-4">
-        <i class="fa fa-id-card-o" aria-hidden="true"></i>
+        <i class="material-icons">link</i>
+        <!-- <i class="fa fa-id-card-o" aria-hidden="true"></i> -->
     </a>
     <ul>
-        <li><a class="btn-floating blue"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+        <li>
+            <a class="btn-floating blue" href="http://www.linkedin.com/in/gbarzagli" target="_blank">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a class="btn-floating black" href="https://github.com/gbarzagli" target="_blank">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+        </li>
     </ul>
 </div>
 <script>
-    $(".button-collapse").sideNav();
+    JQuery(".button-collapse").sideNav();
+
 </script>
