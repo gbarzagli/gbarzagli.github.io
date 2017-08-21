@@ -107,9 +107,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-@angular/core@4.3.4 MIT
+@angular/core@4.3.5 MIT
 
-@angular/router@4.3.4 MIT
+@angular/router@4.3.5 MIT
 
 script-loader@0.7.0 MIT
 
@@ -160,11 +160,11 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-@angular/platform-browser@4.3.4 MIT
+@angular/platform-browser@4.3.5 MIT
 
-@angular/common@4.3.4 MIT
+@angular/common@4.3.5 MIT
 
-css-loader@0.28.4 MIT
+css-loader@0.28.5 MIT
 Copyright JS Foundation and other contributors
 
 Permission is hereby granted, free of charge, to any person obtaining
