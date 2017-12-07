@@ -1,0 +1,20 @@
+<nav>
+    <div class="nav-wrapper teal accent-4">
+        <a href="" class="brand-logo">
+            <i class="material-icons">message</i>
+            <span class="hide-on-small-only">{{title}}</span>
+        </a>
+        <ul class="right">
+            <li>
+                <a (click)="logout()">
+                    <i class="material-icons">exit_to_app</i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="card-panel user-info hide-on-med-and-down">
+    <p>Welcome, {{user}}!
+        <br> Logged at: {{timeLogged | date:"HH:mm:ss"}}</p>
+</div>

@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col s12 m2"></div>
+    <div class="col s12 m7">
+        <div class="card messages-area">
+            <div class="card-content ">
+                <ul class="collection scroll" #scrollMe>
+                    <li class="collection-item avatar" *ngFor="let message of messages">
+                        <i class="material-icons circle" [ngClass]="{'indigo': message.author == user, 'teal accent-4': message.author != user}">person</i>
+                        <span class="title">{{message.author}}</span>
+                        <p>{{message.message}}</p>
+                        <div class="secondary-content">{{message.time | date:"dd/MM/yyyy HH:mm:ss" }}</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="input-field message-input">
+            <textarea #messageArea id="message" class="materialize-textarea" data-length="300" [(ngModel)]="message" (keydown.enter)="sendMessage();false"></textarea>
+            <label for="message">Message</label>
+            <a class="waves-effect waves-light btn indigo" (click)="sendMessage()">Send Message</a>
+        </div>
+    </div>
+    <div class="col s12 m3"></div>
+</div>

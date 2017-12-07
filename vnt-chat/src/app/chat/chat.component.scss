@@ -1,0 +1,43 @@
+.row {
+  margin: 0;
+
+  .messages-area {
+    flex: 1 1 auto;
+    padding: 0;
+
+    .card-content {
+      padding: 0;
+
+      @media (max-height: 590px) {
+        .scroll {
+          max-height: 300px;
+        }
+      }
+      @media (max-height: 680px) {
+        .scroll {
+          max-height: 400px;
+        }
+      }
+      @media (min-height: 680px) {
+        .scroll {
+          max-height: 450px;
+        }
+      }
+
+      .scroll {
+        overflow-y: auto;
+        overflow-x: none;
+
+        .title {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .message-input {
+    flex: 0 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
