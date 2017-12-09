@@ -1,5 +1,4 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { ChatService } from './chat/chat.service';
 
 @Component({
     selector: 'app-root',
