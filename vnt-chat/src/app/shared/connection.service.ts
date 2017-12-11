@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class ConnectionService {
 
-private restURL = 'https://jsonplaceholder.typicode.com/users';
+    private restURL = 'https://jsonplaceholder.typicode.com/users';
 
     constructor(private httpClient: HttpClient) { }
 

@@ -6,10 +6,9 @@ import {
     ViewChild,
     OnDestroy
 } from '@angular/core';
-import { ChatService } from './chat.service';
-import { Message } from './model/message.model';
-import { AuthService } from '../login/auth.service';
 import { Subscription } from 'rxjs/Subscription';
+import { Message } from '../shared/model/message.model';
+import { ChatService } from '../shared/chat.service';
 
 @Component({
     selector: 'app-chat',
@@ -24,15 +23,12 @@ export class ChatComponent implements OnInit, AfterViewChecked, OnDestroy {
     protected message: string;
     private subscription: Subscription;
 
-    constructor(
-        private _chatService: ChatService,
-        private _authService: AuthService
-    ) {
-        this.subscription = _chatService.getMessages().subscribe(next => {
+    constructor(private _chatService: ChatService) {
+        _chatService.server.on(next => {
             this.messages.push(next);
         });
 
-        this.user = _authService.userName;
+        this.user = _chatService.userName;
     }
 
     ngOnInit() {
@@ -48,15 +44,17 @@ export class ChatComponent implements OnInit, AfterViewChecked, OnDestroy {
     }
 
     public sendMessage() {
-        const message = this.message;
-        if (message !== undefined && message !== '') {
-            this._chatService.sendMessage(this.user, message);
-            this.textArea.nativeElement.value = '';
-            this.message = undefined;
-        }
+        const obj = {
+            author: this._chatService.userName,
+            message: this.message
+        };
+        alert(this._chatService.userName);
+        this._chatService.server.emit('messages', obj);
+        this.textArea.nativeElement.value = '';
+        this.message = '';
     }
 
     public ngOnDestroy(): void {
-      this.subscription.unsubscribe();
+        this.subscription.unsubscribe();
     }
 }

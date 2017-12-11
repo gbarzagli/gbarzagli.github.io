@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
-import * as $ from 'jquery';
-import { AuthService } from '../login/auth.service';
+import { ChatService } from '../shared/chat.service';
 
 @Component({
     selector: 'app-header',
@@ -14,16 +13,16 @@ export class HeaderComponent implements OnInit {
     protected user: string;
     protected timeLogged: Date;
 
-    constructor(private _authService: AuthService,  private _router: Router) {
-        this.user = _authService.userName;
-        this.timeLogged = _authService.timeLogged;
+    constructor(private _chatService: ChatService, private _router: Router) {
+        this.user = _chatService.userName;
+        this.timeLogged = _chatService.timeLogged;
     }
 
     ngOnInit() {}
 
     logout() {
-        this._authService.doLogout();
-        this._router.navigate(['']);
+        this._chatService.doLogout();
+        window.location.href = '';
     }
 
 }
