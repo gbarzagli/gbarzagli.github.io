@@ -5,7 +5,7 @@
             <span class="hide-on-small-only">{{title}}</span>
         </a>
         <ul class="right">
-            <li>
+            <li *ngIf="showElements()">
                 <a (click)="logout()">
                     <i class="material-icons">exit_to_app</i>
                 </a>
@@ -14,7 +14,7 @@
     </div>
 </nav>
 
-<div class="card-panel user-info hide-on-med-and-down">
+<div class="card-panel user-info hide-on-med-and-down" *ngIf="showElements()">
     <p>Welcome, {{user}}!
         <br> Logged at: {{timeLogged | date:"HH:mm:ss"}}</p>
 </div>

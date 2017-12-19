@@ -24,10 +24,7 @@ export class ChatComponent implements OnInit, AfterViewChecked, OnDestroy {
     private subscription: Subscription;
 
     constructor(private _chatService: ChatService) {
-        _chatService.server.on(next => {
-            this.messages.push(next);
-        });
-
+        _chatService.server.on('messages', m => this.messages.push(m));
         this.user = _chatService.userName;
     }
 
@@ -48,7 +45,6 @@ export class ChatComponent implements OnInit, AfterViewChecked, OnDestroy {
             author: this._chatService.userName,
             message: this.message
         };
-        alert(this._chatService.userName);
         this._chatService.server.emit('messages', obj);
         this.textArea.nativeElement.value = '';
         this.message = '';

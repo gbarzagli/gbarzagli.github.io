@@ -9,8 +9,15 @@ body {
     app-root {
         display: flex;
         flex-direction: column;
-        flex: 1 0 auto;
+        flex: 1 1 auto;
         background-color: #fafafa;
+
+        app-login {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
+            justify-content: center;
+        }
     }
 }
 
