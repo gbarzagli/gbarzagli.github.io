@@ -67,29 +67,29 @@ body {
     .fala {
         display: none;
         position: absolute;
-        left: -275px;
-        top: 200px;
+        left: -10px;
+        top: 0;
         background: #ffffff;
         border-radius: .4em;
-        // border: 1px solid #000000;
         padding: 30px;
         font-size: 1.5em;
         z-index: 9999;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            border-top-color: #ffffff;
+            border-bottom: 0;
+            margin-left: -20px;
+            margin-bottom: -20px;
+        }
     }
     
-    .fala::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 50%;
-        width: 0;
-        height: 0;
-        border: 25px solid transparent;
-        border-left-color: #ffffff;
-        border-right: 0;
-        margin-top: -25px;
-        margin-right: -25px;
-    }
 
     .boca.aberta {
         display: none;
