@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$primary-color: #f44336;
+$star-active: #ffc107;
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #f5f5f5;
+    font-family: Roboto, sans-serif;
+    padding: 20px 25% 20px 25%;
+    width: 50%;
+
+    main {
+        flex: 1 0 auto;
+        display: flex;
+        flex-direction: row;
+        background: white;
+        box-shadow: 2px 2px 10px rgba(0,0,0,.25);
+
+        section {
+            display: flex;
+            flex-direction: column;
+            padding: 0 20px;
+            
+            &.left {
+                min-height: 100%;
+                flex: 1 1 40%;
+                padding-right: 0;
+
+                header {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 50px 30px;
+                    flex: 0 0 auto;
+                    background: $primary-color;
+                    color: white;
+                    clip-path: polygon(100% 0, 0 0, 0 95%, 25% 100%, 50% 95%, 75% 100%, 100% 95%);
+    
+                    img {
+                        border-radius: 50%;
+                        width: 150px;
+                        height: 150px;
+                    }
+    
+                    h1 {
+                        margin-bottom: 0;
+                        padding-bottom: 5px;
+                        border-bottom: 1px solid white;
+                        text-transform: uppercase;
+                    }
+                    
+                    h2 {
+                        margin-top: 5px;
+                        font-weight: 100;
+                        text-transform: uppercase;
+                    }
+    
+                    p {
+                        text-align: justify;
+                    }
+                }
+    
+                .infos {
+                    flex: 1 0 auto;
+                    padding: 20px 0;
+    
+                    h2 {
+                        width: 60%;
+                        font-size: 1.2em;
+                        color: $primary-color;
+                        text-align: center;
+                        text-transform: uppercase;
+                        margin: 0 auto;
+                        padding: 5px 0;
+                        border-bottom: 2px solid $primary-color;
+                    }
+    
+                    ul {
+                        list-style: none;
+                        margin: 0 auto;
+                        margin-bottom: 30px;
+                        padding: 0;
+                        li {
+                            margin: 10px 0;
+                            a {
+                                display: flex;
+                                text-decoration: none;
+                                color: #0077B5;
+    
+                                span {
+                                    display: flex;
+                                    line-height: 30px;
+                                }
+            
+                                i {
+                                    font-size: 30px;
+                                    margin: 0 10px
+                                }
+                            }
+
+                            small {
+                                color: #999999;
+                            }
+                        }
+                    }
+                }
+    
+                footer {
+                    flex: 0 0 120px;
+                    background: $primary-color;
+                    clip-path: polygon(0 100%, 0 0, 25% 20%, 50% 0, 75% 20%, 100% 0, 100% 100%);
+                }
+            }
+
+            &.right {
+                flex: 1 1 60%;
+                h2 {
+                    font-size: 1.2em;
+                    color: $primary-color;
+                    text-transform: uppercase;
+                    margin: 0;
+                    margin-bottom: 10px;
+                    border-bottom: 2px solid $primary-color;
+                }
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+
+                    li {
+                        display: flex;
+                        margin-bottom: 20px;
+
+                        img {
+                            flex: 0 0 40px;
+                            width: 40px;
+                            height: 40px;
+                            margin-right: 10px;
+                        }
+
+                        label {
+                            flex: 1 1 auto;
+                            display: flex;
+                            flex-direction: column;
+                            b {
+                                display: flex;
+                                justify-content: space-between;
+                                margin: 0;
+            
+                                .date {
+                                    color: $primary-color;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+
+                .education {
+                    flex: 0 0 auto;
+                }
+
+                .work-experiences {
+                    flex: 1 0 auto;
+                    display: flex;
+                    flex-direction: column;
+
+                    ul {
+                        flex: 1 0 auto;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                    }
+                }
+
+                .skills {
+                    flex: 1 0 content;
+                    li {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 20px;
+                        
+                        div {
+                            display: flex;
+                            justify-content: space-between;
+                            i {
+                                color: $star-active;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
