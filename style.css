@@ -269,6 +269,20 @@ body main section.right .work-experiences ul {
       justify-content: space-around;
 }
 
+body main section.right .work-experiences ul company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin: 0 0 10px 0;
+}
+
+body main section.right .work-experiences ul description {
+  text-align: justify;
+}
+
 body main section.right .skills {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 content;
@@ -279,23 +293,27 @@ body main section.right .skills li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-bottom: 20px;
 }
 
 body main section.right .skills li div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 body main section.right .skills li div i {
   color: #ffc107;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=style.css.map */

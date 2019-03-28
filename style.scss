@@ -183,6 +183,16 @@ body {
                         display: flex;
                         flex-direction: column;
                         justify-content: space-around;
+
+                        company {
+                            display: flex;
+                            flex: 1 0 auto;
+                            margin: 0 0 10px 0;
+                        }
+
+                        description {
+                            text-align: justify;
+                        }
                     }
                 }
 
@@ -190,14 +200,16 @@ body {
                     flex: 1 0 content;
                     li {
                         display: flex;
-                        flex-direction: column;
+                        flex-direction: row;
                         margin-bottom: 20px;
                         
                         div {
-                            display: flex;
-                            justify-content: space-between;
+                            flex: 1 1 auto;
+                            display: inline-flex;
+                            justify-content: flex-end;
                             i {
                                 color: $star-active;
+                                margin-left: 10px;
                             }
                         }
                     }
