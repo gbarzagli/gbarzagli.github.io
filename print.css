@@ -3,8 +3,11 @@
   margin: 0cm;
 }
 
+.page-break {
+  page-break-before: always;
+}
+
 body {
-  zoom: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,9 +25,9 @@ body {
 }
 
 body main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,9 +253,9 @@ body main section.right .education {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   margin-top: 20px;
 }
 
@@ -312,8 +315,7 @@ body main section.right .skills {
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
   max-width: 100%;
-  -webkit-column-break-inside: avoid;
-          break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 body main section.right .skills li {

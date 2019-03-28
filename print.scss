@@ -2,13 +2,17 @@
     margin: 0cm;
 }
 
+.page-break {
+    page-break-before: always;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 $primary-color: #f44336;
 $star-active: #ffc107;
 
 body {
-    zoom: 90%;
+    // zoom: 90%;
     display: flex;
     flex-direction: column;
     font-family: Roboto, sans-serif;
@@ -20,7 +24,7 @@ body {
     color-adjust: exact;
 
     main {
-        flex: 1 0 auto;
+        flex: 0 0 auto;
         display: flex;
         flex-direction: row;
         background: white;
@@ -182,7 +186,7 @@ body {
                 .education {
                     display: flex;
                     justify-content: space-between;
-                    flex: 0 1 auto;
+                    flex: 1 1 auto;
                     margin-top: 20px;
 
                     .date {
@@ -217,7 +221,7 @@ body {
                     display: flex;
                     flex: 1 1 100%;
                     max-width: 100%;
-                    break-inside: avoid;
+                    page-break-inside: avoid;
                     li {
                         flex: 1 1 auto;
                         display: flex;
