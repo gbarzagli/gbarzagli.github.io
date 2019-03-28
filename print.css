@@ -3,11 +3,8 @@
   margin: 0cm;
 }
 
-.page-break {
-  page-break-before: always;
-}
-
 body {
+  zoom: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
