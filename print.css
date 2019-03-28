@@ -136,6 +136,10 @@ body main section.left .infos ul li {
   margin: 5px 0;
 }
 
+body main section.left .infos ul li.print {
+  display: none;
+}
+
 body main section.left .infos ul li.site {
   display: block;
 }

@@ -94,6 +94,11 @@ body {
                         break-inside: avoid;
                         li {
                             margin: 5px 0;
+
+                            &.print {
+                                display: none;
+                            }
+                            
                             &.site {
                                 display: block;
                             }
