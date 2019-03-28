@@ -42,13 +42,13 @@ body {
         section {
             display: flex;
             flex-direction: column;
+            padding: 0 10px;
             @media (min-width: 930px) {
                 padding: 0 20px;
             }
             
             &.left {
                 flex: 1 1 40%;
-                padding-right: 0;
 
                 header {
                     display: flex;
