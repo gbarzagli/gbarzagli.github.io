@@ -360,6 +360,12 @@ body main section.right .skills li div {
 
 body main section.right .skills li div i {
   color: #ffc107;
-  margin-left: 10px;
+  margin-left: 1px;
+}
+
+@media (min-width: 760px) {
+  body main section.right .skills li div i {
+    margin-left: 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

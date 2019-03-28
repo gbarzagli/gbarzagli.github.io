@@ -230,7 +230,10 @@ body {
                             justify-content: flex-end;
                             i {
                                 color: $star-active;
-                                margin-left: 10px;
+                                margin-left: 1px;
+                                @media (min-width: 760px) {
+                                    margin-left: 5px;
+                                }
                             }
                         }
                     }
