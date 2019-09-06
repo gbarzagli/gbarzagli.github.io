@@ -1,10 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @page {
   margin: 0cm;
 }
 
+html {
+  font-size: 10px;
+  font-family: Roboto, Arial, sans-serif;
+}
+
 body {
-  zoom: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,7 +16,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: Roboto, sans-serif;
   max-width: 100%;
   min-height: 100vh;
   margin: 0;
@@ -22,9 +25,9 @@ body {
 }
 
 body main {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,6 +36,7 @@ body main {
       -ms-flex-direction: row;
           flex-direction: row;
   background: white;
+  page-break-inside: avoid;
 }
 
 body main section {
@@ -43,7 +47,7 @@ body main section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 20px;
+  padding: 0 2rem;
 }
 
 body main section.left {
@@ -67,7 +71,7 @@ body main section.left header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 50px 30px;
+  padding: 5rem 3rem;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -79,21 +83,21 @@ body main section.left header {
 
 body main section.left header img {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 15rem;
+  height: 15rem;
 }
 
 body main section.left header h1 {
   font-size: 1.3em;
   margin-bottom: 0;
-  padding-bottom: 5px;
-  border-bottom: 1px solid white;
+  padding-bottom: .5rem;
+  border-bottom: .1rem solid white;
   text-transform: uppercase;
 }
 
 body main section.left header h2 {
   font-size: 1.3em;
-  margin-top: 5px;
+  margin-top: .5rem;
   font-weight: 100;
   text-transform: uppercase;
 }
@@ -107,7 +111,7 @@ body main section.left .infos {
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
   max-width: 100%;
-  padding: 20px 0;
+  padding: 2rem 0;
 }
 
 body main section.left .infos h2 {
@@ -117,8 +121,8 @@ body main section.left .infos h2 {
   text-align: center;
   text-transform: uppercase;
   margin: 0 auto;
-  padding: 5px 0;
-  border-bottom: 2px solid #f44336;
+  padding: .5rem 0;
+  border-bottom: 0.2rem solid #f44336;
 }
 
 body main section.left .infos ul {
@@ -129,13 +133,13 @@ body main section.left .infos ul {
           justify-content: center;
   list-style: none;
   padding: 0;
-  margin: 10px 0;
+  margin: 1rem 0;
   -webkit-column-break-inside: avoid;
           break-inside: avoid;
 }
 
 body main section.left .infos ul li {
-  margin: 5px 0;
+  margin: .5rem 0;
 }
 
 body main section.left .infos ul li.print {
@@ -158,12 +162,12 @@ body main section.left .infos ul li a span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  line-height: 30px;
+  line-height: 3rem;
 }
 
 body main section.left .infos ul li a i {
-  font-size: 30px;
-  margin: 0 10px;
+  font-size: 3rem;
+  margin: 0 1rem;
 }
 
 body main section.left .infos ul li small {
@@ -172,8 +176,8 @@ body main section.left .infos ul li small {
 
 body main section.left footer {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 120px;
-          flex: 0 0 120px;
+      -ms-flex: 0 0 12rem;
+          flex: 0 0 12rem;
   background: #f44336;
   -webkit-clip-path: polygon(0 100%, 0 0, 25% 20%, 50% 0, 75% 20%, 100% 0, 100% 100%);
           clip-path: polygon(0 100%, 0 0, 25% 20%, 50% 0, 75% 20%, 100% 0, 100% 100%);
@@ -190,8 +194,8 @@ body main section.right h2 {
   color: #f44336;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 10px;
-  border-bottom: 2px solid #f44336;
+  margin-bottom: 1rem;
+  border-bottom: 0.2rem solid #f44336;
 }
 
 body main section.right ul {
@@ -204,16 +208,16 @@ body main section.right ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 body main section.right ul li img {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 40px;
-          flex: 0 0 40px;
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
+      -ms-flex: 0 0 4rem;
+          flex: 0 0 4rem;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
 }
 
 body main section.right ul li label {
@@ -253,13 +257,13 @@ body main section.right .education {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 body main section.right .education .date {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 80px;
-          flex: 0 1 80px;
+      -ms-flex: 0 1 8rem;
+          flex: 0 1 8rem;
 }
 
 body main section.right .work-experiences {
@@ -297,7 +301,7 @@ body main section.right .work-experiences ul company {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  margin: 0 0 10px 0;
+  margin: 0 0 1rem 0;
 }
 
 body main section.right .work-experiences ul description {
@@ -315,7 +319,15 @@ body main section.right .skills {
   page-break-inside: avoid;
 }
 
-body main section.right .skills li {
+body main section.right .skills ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+}
+
+body main section.right .skills ul li {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -326,10 +338,10 @@ body main section.right .skills li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
-body main section.right .skills li div {
+body main section.right .skills ul li div {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -341,8 +353,8 @@ body main section.right .skills li div {
           justify-content: flex-end;
 }
 
-body main section.right .skills li div i {
+body main section.right .skills ul li div i {
   color: #ffc107;
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 /*# sourceMappingURL=print.css.map */
