@@ -14,7 +14,7 @@ body {
           flex-direction: column;
   background: #f5f5f5;
   max-width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0;
   padding: 0;
   font-size: 1.5em;
@@ -50,8 +50,8 @@ body {
 
 body main {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,8 +289,8 @@ body main section.right ul li label strong .date {
 
 body main section.right .education {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   margin-top: 2rem;
 }
 
@@ -322,7 +322,7 @@ body main section.right .work-experiences ul {
       justify-content: space-around;
 }
 
-body main section.right .work-experiences ul company {
+body main section.right .work-experiences ul .company {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,7 +332,7 @@ body main section.right .work-experiences ul company {
   margin: 0 0 1rem 0;
 }
 
-body main section.right .work-experiences ul description {
+body main section.right .work-experiences ul .description {
   text-align: justify;
 }
 

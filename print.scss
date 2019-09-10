@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
     padding: 0;
     -webkit-print-color-adjust: exact;
@@ -141,6 +141,7 @@ body {
 
             &.right {
                 flex: 1 1 60%;
+
                 h2 {
                     font-size: 1.2em;
                     color: $primary-color;
@@ -170,7 +171,8 @@ body {
                             flex: 1 1 auto;
                             display: flex;
                             flex-direction: column;
-                            b {
+
+                            strong {
                                 display: flex;
                                 justify-content: space-between;
                                 margin: 0;
@@ -205,13 +207,13 @@ body {
                         flex-direction: column;
                         justify-content: space-around;
 
-                        company {
+                        .company {
                             display: flex;
                             flex: 1 1 auto;
                             margin: 0 0 1rem 0;
                         }
 
-                        description {
+                        .description {
                             text-align: justify;
                         }
                     }
@@ -236,6 +238,7 @@ body {
                                 flex: 1 1 auto;
                                 display: inline-flex;
                                 justify-content: flex-end;
+
                                 i {
                                     color: $star-active;
                                     margin-left: 1rem;
