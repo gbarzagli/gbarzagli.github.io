@@ -336,6 +336,10 @@ body main section.right .work-experiences ul .description {
   text-align: justify;
 }
 
+body main section.right .work-experiences ul .description ul {
+  list-style: circle;
+}
+
 body main section.right .skills {
   display: -webkit-box;
   display: -ms-flexbox;

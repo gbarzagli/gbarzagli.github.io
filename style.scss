@@ -225,6 +225,9 @@ body {
 
                         .description {
                             text-align: justify;
+                            ul {
+                                list-style: circle;
+                            }
                         }
                     }
                 }
