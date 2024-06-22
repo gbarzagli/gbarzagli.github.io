@@ -1,11 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
-$primary-color: #f44336;
-$star-active: #ffc107;
-
-*, *::after, *::before {
-    box-sizing: border-box;
-}
+@use 'base';
 
 html {
     font-size: 10px;
@@ -15,14 +8,17 @@ html {
 body {
     background: #f5f5f5;
     font-size: 1.5em;
-    height: 100dvh;
-    display: grid;
+    min-height: 100dvh;
+    display: flex;
+    flex-flow: column;
     margin: 1rem 0;
-    place-items: center;
+    justify-content: center;
+    align-items: center;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 
     main {
+        flex: 1 0 auto;
         @media (min-width: 1100px) {
             max-width: 90%;
         }
@@ -61,7 +57,7 @@ body {
                     align-items: center;
                     padding: 5rem 3rem;
                     flex: 0 0 auto;
-                    background: $primary-color;
+                    background: base.$primary-color;
                     color: white;
                     clip-path: polygon(100% 0, 0 0, 0 95%, 25% 100%, 50% 95%, 75% 100%, 100% 95%);
     
@@ -73,6 +69,7 @@ body {
     
                     h1 {
                         font-size: 1.2em;
+                        margin-top: .5rem;
                         margin-bottom: 0;
                         padding-bottom: .5rem;
                         border-bottom: .1rem solid white;
@@ -81,7 +78,7 @@ body {
                     
                     h2 {
                         font-size: 1.2em;
-                        margin-top: .5rem;
+                        margin: .5rem 0;
                         font-weight: 100;
                         text-transform: uppercase;
                     }
@@ -99,12 +96,12 @@ body {
                     h2 {
                         width: 60%;
                         font-size: 1.2em;
-                        color: $primary-color;
+                        color: base.$primary-color;
                         text-align: center;
                         text-transform: uppercase;
                         margin: 0 auto;
                         padding: .5rem 0;
-                        border-bottom: .2rem solid $primary-color;
+                        border-bottom: .2rem solid base.$primary-color;
                     }
     
                     ul {
@@ -148,7 +145,7 @@ body {
     
                 footer {
                     flex: 0 1 12rem;
-                    background: $primary-color;
+                    background: base.$primary-color;
                     clip-path: polygon(0 100%, 0 0, 25% 20%, 50% 0, 75% 20%, 100% 0, 100% 100%);
                 }
             }
@@ -158,11 +155,11 @@ body {
 
                 h2 {
                     font-size: 1.2em;
-                    color: $primary-color;
+                    color: base.$primary-color;
                     text-transform: uppercase;
                     margin: 0;
                     margin-bottom: 1rem;
-                    border-bottom: .2rem solid $primary-color;
+                    border-bottom: .2rem solid base.$primary-color;
                 }
 
                 ul {
@@ -192,7 +189,7 @@ body {
                                 margin: 0;
             
                                 .date {
-                                    color: $primary-color;
+                                    color: base.$primary-color;
                                     flex: 0 0 auto;
                                 }
                             }
@@ -250,14 +247,6 @@ body {
                                 flex: 1 1 auto;
                                 display: inline-flex;
                                 justify-content: flex-end;
-
-                                i {
-                                    color: $star-active;
-                                    margin-left: .1rem;
-                                    @media (min-width: 760px) {
-                                        margin-left: .5rem;
-                                    }
-                                }
                             }
                         }
                     }

@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 @page {
   margin: 0cm;
 }
-*, *::after, *::before {
-  box-sizing: border-box;
-}
-
 html {
   font-size: 10px;
   font-family: Roboto, Arial, sans-serif;
@@ -46,7 +48,7 @@ body main section.left header {
   align-items: center;
   padding: 5rem 3rem;
   flex: 0 0 auto;
-  background: #f44336;
+  background: #7D2E2E;
   color: white;
   -webkit-clip-path: polygon(100% 0, 0 0, 0 95%, 25% 100%, 50% 95%, 75% 100%, 100% 95%);
           clip-path: polygon(100% 0, 0 0, 0 95%, 25% 100%, 50% 95%, 75% 100%, 100% 95%);
@@ -65,7 +67,7 @@ body main section.left header h1 {
 }
 body main section.left header h2 {
   font-size: 1.3em;
-  margin-top: 0.5rem;
+  margin: 0.5rem 0;
   font-weight: 100;
   text-transform: uppercase;
 }
@@ -80,12 +82,12 @@ body main section.left .infos {
 body main section.left .infos h2 {
   width: 60%;
   font-size: 1.2em;
-  color: #f44336;
+  color: #7D2E2E;
   text-align: center;
   text-transform: uppercase;
   margin: 0 auto;
   padding: 0.5rem 0;
-  border-bottom: 0.2rem solid #f44336;
+  border-bottom: 0.2rem solid #7D2E2E;
 }
 body main section.left .infos ul {
   display: grid;
@@ -123,7 +125,7 @@ body main section.left .infos ul li small {
 }
 body main section.left footer {
   flex: 0 0 12rem;
-  background: #f44336;
+  background: #7D2E2E;
   -webkit-clip-path: polygon(0 100%, 0 0, 25% 20%, 50% 0, 75% 20%, 100% 0, 100% 100%);
           clip-path: polygon(0 100%, 0 0, 25% 20%, 50% 0, 75% 20%, 100% 0, 100% 100%);
 }
@@ -132,11 +134,11 @@ body main section.right {
 }
 body main section.right h2 {
   font-size: 1.2em;
-  color: #f44336;
+  color: #7D2E2E;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 1rem;
-  border-bottom: 0.2rem solid #f44336;
+  border-bottom: 0.2rem solid #7D2E2E;
 }
 body main section.right ul {
   margin: 0;
@@ -164,7 +166,7 @@ body main section.right ul li label strong {
   margin: 0;
 }
 body main section.right ul li label strong .date {
-  color: #f44336;
+  color: #7D2E2E;
 }
 body main section.right .education {
   display: flex;
@@ -221,8 +223,4 @@ body main section.right .skills ul li div {
   flex: 1 1 auto;
   display: inline-flex;
   justify-content: flex-end;
-}
-body main section.right .skills ul li div i {
-  color: #ffc107;
-  margin-left: 1rem;
 }/*# sourceMappingURL=print.css.map */
