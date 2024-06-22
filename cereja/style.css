@@ -4,7 +4,7 @@ body {
   padding: 0;
   min-height: 100vh;
   background-color: #7EC0EE;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .grama {
@@ -22,18 +22,14 @@ body {
   margin: auto;
   width: 160px;
   height: 300px;
-  -webkit-transition: 1.1s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: 1.1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
 .cereja:hover {
   bottom: 190px;
 }
-
 .cereja:hover .fala {
   display: block;
 }
-
 .cereja:hover .boca.aberta {
   display: block;
   position: absolute;
@@ -48,7 +44,6 @@ body {
   height: 30px;
   z-index: 2;
 }
-
 .cereja:hover .boca.aberta .lingua {
   position: absolute;
   bottom: 3px;
@@ -59,25 +54,22 @@ body {
   background-color: #f35367;
   border-radius: 50px;
 }
-
 .cereja:hover .corpo .meio .boca {
   display: none;
 }
-
 .cereja .fala {
   display: none;
   position: absolute;
   left: -10px;
   top: 0;
   background: #ffffff;
-  border-radius: .4em;
+  border-radius: 0.4em;
   padding: 30px;
   font-size: 1.5em;
   z-index: 9999;
 }
-
 .cereja .fala::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -89,11 +81,9 @@ body {
   margin-left: -20px;
   margin-bottom: -20px;
 }
-
 .cereja .boca.aberta {
   display: none;
 }
-
 .cereja .cabo {
   position: absolute;
   bottom: 100px;
@@ -102,18 +92,15 @@ body {
   height: 200px;
   -webkit-clip-path: polygon(0 0, 100% 0, 60% 100%, 40% 100%);
           clip-path: polygon(0 0, 100% 0, 60% 100%, 40% 100%);
-  -webkit-transform: rotateZ(14deg);
-          transform: rotateZ(14deg);
+  transform: rotateZ(14deg);
   background-color: #a94d3c;
 }
-
 .cereja .corpo {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 200px;
 }
-
 .cereja .corpo .direita {
   position: absolute;
   left: 37%;
@@ -123,7 +110,6 @@ body {
   width: 100px;
   height: 100px;
 }
-
 .cereja .corpo .direita .olho {
   position: absolute;
   left: 40%;
@@ -134,7 +120,6 @@ body {
   height: 30px;
   z-index: 1;
 }
-
 .cereja .corpo .direita .olho .brilho.pequeno {
   position: absolute;
   right: 60%;
@@ -145,7 +130,6 @@ body {
   height: 5px;
   z-index: 2;
 }
-
 .cereja .corpo .direita .olho .brilho.grande {
   position: absolute;
   left: 50%;
@@ -156,7 +140,6 @@ body {
   height: 10px;
   z-index: 2;
 }
-
 .cereja .corpo .direita .bochecha {
   position: absolute;
   right: 20px;
@@ -169,7 +152,6 @@ body {
   height: 10px;
   z-index: 20;
 }
-
 .cereja .corpo .meio {
   position: absolute;
   bottom: 12px;
@@ -181,7 +163,6 @@ body {
   height: 50px;
   z-index: 1;
 }
-
 .cereja .corpo .meio .boca.esquerda {
   position: absolute;
   right: 48%;
@@ -191,7 +172,6 @@ body {
   width: 20px;
   height: 20px;
 }
-
 .cereja .corpo .meio .boca.direita {
   position: absolute;
   left: 48%;
@@ -201,7 +181,6 @@ body {
   width: 20px;
   height: 20px;
 }
-
 .cereja .corpo .esquerda {
   position: absolute;
   right: 37%;
@@ -211,7 +190,6 @@ body {
   width: 100px;
   height: 100px;
 }
-
 .cereja .corpo .esquerda .olho {
   position: absolute;
   right: 40%;
@@ -222,7 +200,6 @@ body {
   height: 30px;
   z-index: 1;
 }
-
 .cereja .corpo .esquerda .olho .brilho.pequeno {
   position: absolute;
   right: 60%;
@@ -233,7 +210,6 @@ body {
   height: 5px;
   z-index: 2;
 }
-
 .cereja .corpo .esquerda .olho .brilho.grande {
   position: absolute;
   left: 50%;
@@ -244,7 +220,6 @@ body {
   height: 10px;
   z-index: 2;
 }
-
 .cereja .corpo .esquerda .bochecha {
   position: absolute;
   left: 20px;
@@ -256,5 +231,4 @@ body {
   width: 20px;
   height: 10px;
   z-index: 20;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
