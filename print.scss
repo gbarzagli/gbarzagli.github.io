@@ -7,6 +7,10 @@
 $primary-color: #f44336;
 $star-active: #ffc107;
 
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 10px;
     font-family: Roboto, Arial, sans-serif;
@@ -21,6 +25,8 @@ body {
     padding: 0;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 
     main {
         flex: 1 1 100%;
@@ -206,6 +212,11 @@ body {
                         display: flex;
                         flex-direction: column;
                         justify-content: space-around;
+
+                        img {
+                            width: 3rem;
+                            height: 3rem;
+                        }
 
                         .company {
                             display: flex;
